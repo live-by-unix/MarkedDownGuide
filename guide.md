@@ -236,7 +236,7 @@ This is a table on how to do font styling:
 
 ### Emoji support
 Emojis happen when you put two semicolons: `::`    
-Then put the emoji name in between those two semicolons, so for this emoji 😃, you would do:       
+Then put the emoji name in between those two semicolons, so for this emoji: 😃, you would do:       
  
 ```markdown
 :smiley:
@@ -281,4 +281,21 @@ Desktop Parsers:
 
 **And even more!**
 
-**TBD**
+## Contributing
+Of course, this guide was written by a Homo sapien, so of course mistakes are made. And other Homo sapiens want to add more.    
+Feel free to do that, but under certain rules:
+* Please keep things PG
+* Please don't spam
+* Please keep your PR/Issue in this struct Issue, Fixes, Why to adapt, How to put your name in credits section.   
+Thank you very much. GitHub link to this is [https://github.com/live-by-unix/MarkDownGuide](https://github.com/live-by-unix/MarkDownGuide).  
+This file is guide.md in repo.  
+
+## Credits
+WikiPedia for all the pages I used in my "History" section.   
+Myself, live-by-unix.    
+
+Thank you for reading & using, this file is under the GUIDEMDLICENSE file. (CC0 1.0 Universal (CC0)) 
+
+Made with ♥️ by the GitHub user live-by-unix. 
+
+:)
