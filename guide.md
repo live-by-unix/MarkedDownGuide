@@ -160,11 +160,9 @@ Make sure to still include the language name in both the code blocks!
 
 ### Block Quotes
 To make a block quote, do this:  
-````markdown
 ```markdown
 > This is a block quote.
 ```
-````
 It would render as:  
 > This is a block quote.
 
