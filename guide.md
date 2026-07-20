@@ -1,6 +1,6 @@
 # This is a guide on how to learn Markdown, written in Markdown. 
 We will cover the history, the ways to use it, practice activities, different parsers, contributing to this guide, and credits.       
-This guide assumes you have a good grip on web code, cause in the usage section, you will see it a lot.      
+This guide assumes you have a good grip on web code, cause in the usage section, you will see it & it's logic a lot.      
 
 ## History
 Markdown was created to make writing for the web easier.           
