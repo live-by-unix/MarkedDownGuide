@@ -294,7 +294,7 @@ This file is guide.md in repo.
 WikiPedia for all the pages I used in my "History" section.   
 Myself, live-by-unix.    
 
-Thank you for reading & using, this file is under the GUIDEMDLICENSE file. (CC0 1.0 Universal (CC0)) 
+Thank you for reading & using, this project is under the LICENSE stated in the LICENSE file. (CC0 1.0 Universal (CC0)) 
 
 Made with ♥️ by the GitHub user live-by-unix. 
 
