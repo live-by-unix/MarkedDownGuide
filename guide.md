@@ -65,7 +65,7 @@ These are the common ways to use the different headings. But of course, you can 
 
 #### Unordered lists
 These are lists which are like unordered bullet points in GDocs.          
-You can use `-` (minus) , `+` (plus) , or `*`(asterisk)
+You can use `-` (hyphens) , `+` (plus) , or `*`(asterisk)
 For example:    
 * This
 * is
@@ -182,9 +182,103 @@ If you want to put text as description along side the of the image do this:
 You can do the same with images from your host. 
 **You can do even more with images!**
 
-TBD:
-* Tables
-* Task lists
-* Strikethrough
-* Emoji support
+### Tables
+To do tables do this:
+```markdown
+| Name  | Age | City      |
+|-------|-----|-----------|
+| Alice | 25  | New York  |
+| Bob   | 30  | London    |
+| Carol | 28  | Tokyo     |
+```
+That would render as:
 
+| Name  | Age | City      |
+|-------|-----|-----------|
+| Alice | 25  | New York  |
+| Bob   | 30  | London    |
+| Carol | 28  | Tokyo     |
+
+The table is created using pipes `|` and hyphens `-`
+To align, do this:
+```markdown
+| Left Align | Center Align | Right Align |
+|:-----------|:------------:|------------:|
+| Apple      | Banana       | 10          |
+| Orange     | Grape        | 20          |
+```
+Notice the semicolons! It would render as:   
+
+| Left Align | Center Align | Right Align |
+|:-----------|:------------:|------------:|
+| Apple      | Banana       | 10          |
+| Orange     | Grape        | 20          |
+
+### Strikethrough
+This is to cross out words.  
+You can do this with markdown like this:
+```markdown
+~~Hello, World!~~
+```
+It would render as
+~~Hello, World!~~
+You can use these in sentences, font styling (coming up), anywhere with words.     
+
+### Font styling
+This is a table on how to do font styling: 
+| Style         | Markdown                     | Result     |
+| ------------- | ---------------------------- | ---------- |
+| Italic        | `*text*` or `_text_`         | *text*     |
+| Bold          | `**text**` or `__text__`     | **text**   |
+| Bold + Italic | `***text***` or `___text___` | ***text*** |
+| Strikethrough | `~~text~~`                   | ~~text~~   |
+| Inline Code   | `` `text` ``                 | `text`     |
+
+### Emoji support
+Emojis happen when you put two semicolons: `::`    
+Then put the emoji name in between those two semicolons, so for this emoji 😃, you would do:       
+ 
+```markdown
+:smiley:
+```
+Check the specific names & see if your markdown has it before using.     
+
+## Practice
+To practice, I have listed some activities below:
+* Trying to make a README.md for a GitHub project
+* Rewriting your HTML file's code as much as you can into Markdown
+* Trying to write guides like this in Markdown
+* **And learning more!** (It never hurts)
+
+## Parsers
+Web Parsers:
+| Parser          | Language   | Features                                                  |
+| --------------- | ---------- | --------------------------------------------------------- |
+| **Marked**      | JavaScript | Fast, lightweight, GitHub-Flavored Markdown (GFM) support |
+| **markdown-it** | JavaScript | Highly extensible with plugins                            |
+| **Micromark**   | JavaScript | CommonMark-compliant, powers the unified ecosystem        |
+| **Remark**      | JavaScript | Parse, transform, and render Markdown using plugins       |
+| **Showdown**    | JavaScript | Converts Markdown ↔ HTML                                  |
+| **Snarkdown**   | JavaScript | Tiny (~2 KB), minimal parser                              |
+
+Mobile Parsers:
+* Markwon (Android) (Kotlin/Java)
+* Down (Swift, iOS)
+* Ink (Swift, iOS)
+
+Desktop Parsers:
+| Platform          | Popular Parsers                                          |
+| ----------------- | -------------------------------------------------------- |
+| **Electron**      | Marked, markdown-it, Micromark, Remark                   |
+| **Tauri**         | pulldown-cmark (Rust), markdown-it (JavaScript frontend) |
+| **Qt (C++)**      | cmark, MD4C                                              |
+| **GTK (C/C++)**   | cmark, MD4C                                              |
+| **.NET (C#)**     | Markdig                                                  |
+| **Java**          | commonmark-java, flexmark-java                           |
+| **Python**        | Mistune, Python-Markdown, Markdown2                      |
+| **Swift (macOS)** | Down, Ink                                                |
+| **Rust**          | pulldown-cmark, comrak                                   |
+
+**And even more!**
+
+**TBD**
