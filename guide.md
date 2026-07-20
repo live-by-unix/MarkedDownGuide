@@ -41,11 +41,10 @@ We will teach the following:
 * Headings
 * Lists
 * Links
-* Code blocks
+* Fenced code blocks
 * Block Quotes
 * Images
 * Tables
-* Fenced code blocks
 * Task lists
 * Strikethrough
 * Emoji support
@@ -87,4 +86,107 @@ and
 The one I like the best are asterisks.    
 
 ### Ordered lists
-TBD. (to be done)
+Basic ordered lists:
+```markdown
+1. This
+2. Is
+3. Basic
+```
+That list is easily to make. Put a number, then a period next to it, then a space, then your word.      
+So that should render as:
+1. This
+2. Is
+3. Basic
+Most parsers just put the next number after the return for you.
+
+Nested ordered lists:
+```markdown
+1. Fruits
+    1. Apple
+    2. Banana
+2. Vegetables
+    1. Carrot
+    2. Lettuce
+```
+That would render as:   
+1. Fruits
+    1. Apple
+    2. Banana
+2. Vegetables
+    1. Carrot
+    2. Lettuce
+
+  You would create the same 1. as a ordered list, then return, then `tab`, then put the same 1. as a ordered list.     
+  Again, most editors automaticlly put the next number in the list.     
+
+  ### Links
+  Links are ways to lead to a webpage directly in your markdown.    
+  
+  You can put the link directly, but if you a word for the user to click that leads to the link (a hyperlink), do this syntax.   
+  ```markdown
+[Leads to example.com](https://www.example.com)
+```
+The `[]` is the place where you put the word, and the `()` is where you put link.   
+
+In total, it would render like:
+[Leads to example.com](https://www.example.com)
+
+By defualt, Markdown will open the link & highlight it if you just put the link directly.      
+But to be sure, put the link in the `[]` and the link AGAIN in the `()` to make the link as a "word" which leads to the link.    
+
+### Fenced code blocks
+We don't teach normal code blocks, as fenced code blocks are:  
+* Easier to use in lists
+* More used
+* The standard in Markdown
+* **And more reasons!**
+
+To make a fenced code block, do this.      
+Put 3 backticks (`) and then the word of your programming language.       
+
+So ```perl or ```html or ```markdown or anything really, just double check it is valid by markdown standards.   
+Then create a new line, and put the code you need.     
+Then create a newline and put 3 more backticks.   
+So if I needed to share a python snippet, I would do this:
+
+````markdown
+```python
+def hello_world():
+    print("Hello, World!")
+```
+````
+If you need to put a fenced code block inside of a code block, just put more backticks then the fenced code block you are trying to put in the fenced code block.    
+Make sure to still include the language name in both the code blocks!     
+
+### Block Quotes
+To make a block quote, do this:  
+````markdown
+```markdown
+> This is a block quote.
+```
+````
+It would render as:  
+> This is a block quote.
+
+### Images
+To put images do this:
+```markdown
+![Alt text](image.png)
+```
+If you want to put a image from the web, do this:
+```markdown
+![OpenAI Logo](https://images.ctfassets.net/kftzwdyauwt9/2fkAIT3PbTRytKTBx9cx8o/229bc28cb338565fe735d8935abc801f/OpenAI_Wordmark_Gif.gif?w=1920&q=90&fm=webp)
+```
+If you want to put text as description along side the of the image do this:
+```markdown
+![OpenAI Logo](https://images.ctfassets.net/kftzwdyauwt9/2fkAIT3PbTRytKTBx9cx8o/229bc28cb338565fe735d8935abc801f/OpenAI_Wordmark_Gif.gif?w=1920&q=90&fm=webp "GIF of OpenAI logo")
+```
+You can do the same with images from your host. 
+**You can do even more with images!**
+
+TBD:
+* Tables
+* Task lists
+* Strikethrough
+* Emoji support
+
