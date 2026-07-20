@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Markdown!</title>
+
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 1em;
+            overflow-x: auto;
+            border-radius: 8px;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        blockquote {
+            border-left: 4px solid #ccc;
+            padding-left: 1em;
+            color: #666;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="content">Loading...</div>
+
+<script src="marked.min.js"></script>
+
+<script>
+async function loadMarkdown() {
+    try {
+        const response = await fetch("guide.md");
+
+        if (!response.ok)
+            throw new Error("Couldn't load guide.md");
+
+        const markdown = await response.text();
+
+        document.getElementById("content").innerHTML =
+            marked.parse(markdown);
+    }
+    catch (err) {
+        document.getElementById("content").innerHTML =
+            `<h2>Error</h2><p>${err.message}</p>`;
+    }
+}
+
+loadMarkdown();
+</script>
+
+</body>
+</html>
