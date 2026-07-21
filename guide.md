@@ -1,6 +1,10 @@
-# This is a guide on how to learn Markdown, written in Markdown. 
+# LearnMD - Learn Markdown
 We will cover the history, the ways to use it, practice activities, different parsers, contributing to this guide, and credits.       
 This guide assumes you have a good grip on web code, cause in the usage section, you will see it & it's logic a lot.      
+
+## What is Markdown
+Markdown is a lightweight markup language, designed for blogs, coding etc.    
+It has multiple parsers, different extensions, and probably the most known markup language.    
 
 ## History
 Markdown was created to make writing for the web easier.           
@@ -36,7 +40,7 @@ Today:
 Now, Markdown is used **Everywhere!**     
 
 ## How to use Markdown
-Of course, we can't teach everything, so we wil only teach the basic syntax which should ready you for READMEs, note taking, and writing guides like this.        
+Of course, we can't teach everything, so we will only teach the basic syntax which should ready you for READMEs, note taking, and writing guides like this.        
 We will teach the following:
 * Headings
 * Lists
@@ -48,6 +52,18 @@ We will teach the following:
 * Task lists
 * Strikethrough
 * Emoji support
+
+You can use marky-editor.pages.dev as below for markdown testing:     
+
+<div style="max-width:900px; margin:auto;">
+    <iframe 
+        src="https://marky-editor.pages.dev"
+        style="width:100%; height:600px; border:none;">
+    </iframe>
+</div>
+
+(We will have this iframe around sections)
+
 
 ### Headings
 The six heading levels are:
@@ -117,7 +133,15 @@ That would render as:
     2. Lettuce
 
   You would create the same 1. as a ordered list, then return, then `tab`, then put the same 1. as a ordered list.     
-  Again, most editors automaticlly put the next number in the list.     
+  Again, most editors automatically put the next number in the list.     
+
+<div style="max-width:900px; margin:auto;">
+    <iframe 
+        src="https://marky-editor.pages.dev"
+        style="width:100%; height:600px; border:none;">
+    </iframe>
+</div>
+
 
   ### Links
   Links are ways to lead to a webpage directly in your markdown.    
@@ -131,7 +155,7 @@ The `[]` is the place where you put the word, and the `()` is where you put link
 In total, it would render like:
 [Leads to example.com](https://www.example.com)
 
-By defualt, Markdown will open the link & highlight it if you just put the link directly.      
+By default, Markdown will open the link & highlight it if you just put the link directly.      
 But to be sure, put the link in the `[]` and the link AGAIN in the `()` to make the link as a "word" which leads to the link.    
 
 ### Fenced code blocks
@@ -181,6 +205,13 @@ If you want to put text as description along side the of the image do this:
 ```
 You can do the same with images from your host. 
 **You can do even more with images!**
+
+<div style="max-width:900px; margin:auto;">
+    <iframe 
+        src="https://marky-editor.pages.dev"
+        style="width:100%; height:600px; border:none;">
+    </iframe>
+</div>
 
 ### Tables
 To do tables do this:
