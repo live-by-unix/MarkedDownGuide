@@ -1,5 +1,5 @@
 ## Markdown cheatsheet
-**Covers everything in guide.md**
+**Covers everything in guide.md**   
 The follwing is included:
 * Headings
 * Lists
@@ -21,7 +21,6 @@ The six heading levels are:
 ##### Heading Level 5 (Rarely Used / <h5>)
 ###### Heading Level 6 (Smallest / <h6>)
 ``` 
-These are the common ways to use the different headings. But of course, you can use them in different ways.   
 
 ### Lists
 
@@ -44,8 +43,6 @@ and
 + is
 + a
 + list
-
-The one I like the best are asterisks.    
 
 ### Ordered lists
 Basic ordered lists:
@@ -81,14 +78,6 @@ That would render as:
   You would create the same 1. as a ordered list, then return, then `tab`, then put the same 1. as a ordered list.     
   Again, most editors automatically put the next number in the list.     
 
-<div style="max-width:900px; margin:auto;">
-    <iframe 
-        src="https://marky-editor.pages.dev"
-        style="width:100%; height:600px; border:none;">
-    </iframe>
-</div>
-
-
   ### Links
   Links are ways to lead to a webpage directly in your markdown.    
   
@@ -104,13 +93,7 @@ In total, it would render like:
 By default, Markdown will open the link & highlight it if you just put the link directly.      
 But to be sure, put the link in the `[]` and the link AGAIN in the `()` to make the link as a "word" which leads to the link.    
 
-### Fenced code blocks
-We don't teach normal code blocks, as fenced code blocks are:  
-* Easier to use in lists
-* More used
-* The standard in Markdown
-* **And more reasons!**
-
+### Fenced code block
 To make a fenced code block, do this.      
 Put 3 backticks (`) and then the word of your programming language.       
 
@@ -149,15 +132,6 @@ If you want to put text as description along side the of the image do this:
 ```markdown
 ![OpenAI Logo](https://images.ctfassets.net/kftzwdyauwt9/2fkAIT3PbTRytKTBx9cx8o/229bc28cb338565fe735d8935abc801f/OpenAI_Wordmark_Gif.gif?w=1920&q=90&fm=webp "GIF of OpenAI logo")
 ```
-You can do the same with images from your host. 
-**You can do even more with images!**
-
-<div style="max-width:900px; margin:auto;">
-    <iframe 
-        src="https://marky-editor.pages.dev"
-        style="width:100%; height:600px; border:none;">
-    </iframe>
-</div>
 
 ### Tables
 To do tables do this:
